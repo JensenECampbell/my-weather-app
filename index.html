@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="row">
+          <div class="current-day col-sm-4">
+            <div class="update" id="current-time"></div>
+            <div class="current-weather">
+              <h1>Vancouver</h1>
+              <h2>
+                <span id="temperature">20</span>
+                <a href="#" id="celcius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </h2>
+              <p>
+                15°C/13°C
+                <br />
+                <span class="emoji">🌧</span>
+                <br />
+                Rain
+              </p>
+            </div>
+            <p class="comfort-level">
+              <strong class="title">Comfort Level</strong>
+              <br />
+              <em class="title">Humidity</em> <span class="result">96%</span>
+              <br />
+              <em class="title">Feels like</em> <span class="result">12°C</span>
+              <br />
+              <em class="title">UV index</em> <span class="result">1 Low</span>
+            </p>
+            <hr />
+            <p class="wind">
+              <strong class="title">Wind</strong>
+              <br />
+              <em class="title">Wind direction</em>
+              <span class="result">East</span>
+              <br />
+              <em class="title">Wind speed</em>
+              <span class="result"> < 12km/h </span>
+            </p>
+            <hr />
+            <p class="sun-activity">
+              <strong class="title">Sunrise & Sunset</strong>
+              <br />
+              <em class="title">Sunrise</em> <span class="result">5:07</span>
+              <br />
+              <em class="title">Sunset</em> <span class="result">21:16</span>
+            </p>
+          </div>
+          <div class="future-weather col-sm-3">
+            <form id="search-engine">
+              <input
+                type="search"
+                placeholder="Search for a city here..."
+                autocomplete="off"
+                autofocus="on"
+                class="form-control"
+                id="city-search"
+              />
+              <input type="submit" id="search-button" value="Search" />
+              <input
+                type="submit"
+                id="current-location"
+                value="Current Location"
+              />
+            </form>
+
+            <div class="weather">
+              Tomorrow, June 10
+              <br />
+              <span class="emoji">🌧</span>
+              <br />
+              20°C / 13°C
+              <hr />
+              Sat., June 11
+              <br />
+              <span class="emoji">⛅</span>
+              <br />
+              20°C / 12°C
+              <hr />
+              Sun., June 12
+              <br />
+              <span class="emoji">🌧</span>
+              <br />
+              20°C / 13°C
+              <hr />
+              Mon., June 13
+              <br />
+              <span class="emoji">⛅</span>
+              <br />
+              18°C / 11°
+              <hr />
+              Tue., June 14
+              <br />
+              <span class="emoji">⛅</span>
+              <br />
+              18°C / 10°
+              <hr />
+              Wed., June 15
+              <br />
+              <span class="emoji">⛅</span>
+              <br />
+              19°C / 11°C
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

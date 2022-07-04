@@ -1,0 +1,71 @@
+.emoji {
+  font-family: "Segoe UI Emoji";
+  font-size: 44px;
+}
+.weather-app {
+  margin: 20px auto;
+}
+.current-day .update {
+  font-size: 12px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 46px;
+}
+a {
+  text-decoration: none;
+  color: #212529;
+}
+a:hover {
+  text-decoration: none;
+  color: #606b76;
+}
+.current-weather,
+.future-weather,
+.result {
+  text-align: center;
+}
+.current-weather {
+  padding: 10px 0;
+  border: 2px solid rgba(11, 82, 11, 0.3);
+  border-radius: 5px;
+}
+.result {
+  font-size: 20px;
+  padding-left: 50px;
+}
+.comfort-level,
+.wind,
+.sun-activity {
+  line-height: 50px;
+}
+hr {
+  border: 0;
+  border-top: 1px solid rgba(11, 82, 11, 0.3);
+}
+form {
+  padding-bottom: 20px;
+}
+.col-sm-3,
+.col-sm-4 {
+  padding: 35px;
+  background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+.col-sm-3 {
+  border-radius: 0px 6px 6px 0px;
+}
+.col-sm-4 {
+  border-radius: 6px 0px 0px 6px;
+}
+#search-button {
+  margin: 10px;
+}
